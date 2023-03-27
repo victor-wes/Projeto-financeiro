@@ -22,17 +22,17 @@ function calculoFinanceiro(){
     };
 
     let valorCalculado = {
-        desp: calculoFinanceiro(60),
-        inv: calculoFinanceiro(15),
-        plan: calculoFinanceiro(10),
-        laz: calculoFinanceiro(10),
-        liv: calculoFinanceiro(5)
+        desp: calculo(60),
+        inv: calculo(15),
+        plan: calculo(10),
+        liv: calculo(5),
+        laz: calculo(10),
     };
 
-    separacaoGastros.dizimo.innerHTML = dizimo;
-    separacaoGastros.despesas.innerHTML = valorCalculado.desp;
-    separacaoGastros.investimento.innerHTML = valorCalculado.inv;
-    separacaoGastros.planos.innerHTML = valorCalculado.plan;
-    separacaoGastros.lazer.innerHTML = valorCalculado.laz;
-    separacaoGastros.livre.innerHTML = valorCalculado.liv;
+    separacaoGastos.dizimo.innerHTML = "R$ " + dizimo;
+    separacaoGastos.despesas.innerHTML = "R$ " + valorCalculado.desp;
+    separacaoGastos.investimento.innerHTML = "R$ " + valorCalculado.inv;
+    separacaoGastos.planos.innerHTML = "R$ " + valorCalculado.plan;
+    separacaoGastos.lazer.innerHTML = "R$ " + valorCalculado.laz;
+    separacaoGastos.livre.innerHTML = "R$ " + valorCalculado.liv;
 }

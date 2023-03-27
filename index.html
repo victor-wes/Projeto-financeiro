@@ -11,40 +11,81 @@
 
 <body>
     <header>
-        <div class="logo">
-            <h1>VicDev</h1>
-        </div>
-        <!-- /.logo -->
-        <h1>Finanças</h1>
-        <div class="menu">
-            <img src="images/icons8-menu-arredondado-50.png" alt="menu-hamburguer">
-        </div>
-        <!-- /.menu -->
+        <div class="desktop">
+            <div class="logo">
+                <h1>VicDev</h1>
+            </div>
+            <!-- /.logo -->
+            <h1>Finanças</h1>
+            <div class="menu">
+                <img src="images/icons8-menu-arredondado-50.png" alt="menu-hamburguer">
+            </div>
+            <!-- /.menu -->
+        </div><!--header-desktop-->
+
+        <div class="mobile">
+            <div class="logo">
+                <h1>VicDev</h1>
+            </div>
+            <!-- /.logo -->
+            <h1>Finanças</h1>
+            <div class="menu">
+                <img src="images/icons8-menu-arredondado-50.png" alt="menu-hamburguer">
+            </div>
+            <!-- /.menu -->
+        </div><!--header-mobile-->
     </header>
 
     <main>
-        <section class="formulario">
-            <h2 class="titulo">Entradas:</h2>
-            <!-- /.titulo -->
-            <input type="number" name="salario" id="salario" class="salario" placeholder="Salário:">
-            <input type="submit" value="Cadastrar" onclick="calculoFinanceiro()" class="entrada">
-            <div class="clear"></div>
-        </section>
-        <!-- /.formulario -->
-
-        <section class="tabela-valores">
-            <h1 class="titulo">Tabela de Planejamento:</h1>
-            <!-- /.titulo -->
-            <ul style="display:none;">
-                <h2>Dizimo: R1</h2>
-                <li>Despesas: R$ <span id="valorDes">0,00</span></li>
-                <li>Investimentos: R$ <span id="valorInv">0,00</span></li>
-                <li>Planos a médio prazo: R$ <span id="valorPMP">0,00</span></li>
-                <li>Lazer: R$ <span id="valorLaz">0,00</span></li>
-                <li>Livre: R$ <span id="valorLiv">0,00</span></li>
-            </ul>
-        </section>
-        <!-- /.tabela-valores -->
+        <div class="desktop">
+            <section class="formulario">
+                <h2 class="titulo">Entradas:</h2>
+                <!-- /.titulo -->
+                <input type="number" name="salario" id="salario" class="salario" placeholder="Salário:">
+                <input type="submit" value="Cadastrar" onclick="calculoFinanceiro()" class="entrada">
+                <div class="clear"></div>
+            </section>
+            <!-- /.formulario -->
+            <section class="tabela-valores">
+                <h1 class="titulo">Tabela de Planejamento:</h1>
+                <!-- /.titulo -->
+                <ul >
+                    <h2>Dizimo:<span id="valorDiz">R$ 0,00</span></h2>
+                    <li>Despesas:<span id="valorDes">R$ 0,00</span></li>
+                    <li>Investimentos:<span id="valorInv">R$ 0,00</span></li>
+                    <li>Planos a médio prazo:<span id="valorPMP">R$ 0,00</span></li>
+                    <li>Lazer:<span id="valorLaz">R$ 0,00</span></li>
+                    <li>Livre:<span id="valorLiv">R$ 0,00</span></li>
+                </ul>
+            </section>
+            <!-- /.tabela-valores -->
+        </div>
+        <!-- /.desktop -->
+        
+        <div class="mobile">
+            <section class="formulario">
+                <h2 class="titulo">Entradas:</h2>
+                <!-- /.titulo -->
+                <input type="number" name="salario" id="salario" class="salario" placeholder="Salário:">
+                <input type="submit" value="Cadastrar" onclick="calculoFinanceiro()" class="entrada">
+                <div class="clear"></div>
+            </section>
+            <!-- /.formulario -->
+            <section class="tabela-valores">
+                <h1 class="titulo">Tabela de Planejamento:</h1>
+                <!-- /.titulo -->
+                <ul style="display:none;">
+                    <h2>Dizimo: R1</h2>
+                    <li>Despesas: R$ <span id="valorDes">0,00</span></li>
+                    <li>Investimentos: R$ <span id="valorInv">0,00</span></li>
+                    <li>Planos a médio prazo: R$ <span id="valorPMP">0,00</span></li>
+                    <li>Lazer: R$ <span id="valorLaz">0,00</span></li>
+                    <li>Livre: R$ <span id="valorLiv">0,00</span></li>
+                </ul>
+            </section>
+            <!-- /.tabela-valores -->
+        </div>
+        <!-- /.mobile -->
     </main>
 
     <script src="js/function.js"></script>
