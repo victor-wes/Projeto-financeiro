@@ -95,7 +95,7 @@ ul h2{
     justify-content: space-between;
 }
 
-ul h2 span{
+ul h2 span, li span{
     color: var(--cor-saldo-positivo);
 }
 
@@ -106,8 +106,4 @@ ul li{
     padding: 10px;
     display: flex;
     justify-content: space-between;
-}
-
-li span{
-    color: var(--cor-saldo-positivo);
 }
