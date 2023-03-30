@@ -7,17 +7,17 @@ var separacaoGastos = {
     livre: document.querySelector('#valorLiv')
 };
 
-function calculoFinanceiro(){
+function calculoFinanceiro() {
     let salarioBase = document.querySelector('#salario').value
 
     let dizimo = (10 * salarioBase) / 100;
 
 
-    function salario(){
+    function salario() {
         return salarioBase - dizimo;
     };
 
-    function calculo(base){
+    function calculo(base) {
         return (base * salario()) / 100;
     };
 
@@ -26,7 +26,7 @@ function calculoFinanceiro(){
         inv: calculo(15),
         plan: calculo(10),
         liv: calculo(5),
-        laz: calculo(10),
+        laz: calculo(10)
     };
 
     separacaoGastos.dizimo.innerHTML = "R$ " + dizimo;

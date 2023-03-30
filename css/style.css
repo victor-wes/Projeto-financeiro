@@ -1,4 +1,4 @@
-:root{
+:root {
     --cor-fundo: #2E3640;
     --cor-contraste: #0433BF;
     --cor-analoga-contraste-1: #0442BF;
@@ -8,7 +8,7 @@
     --cor-saldo-positivo: rgb(72, 253, 72);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,17 +16,23 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.clear{clear: both;}
+.clear {
+    clear: both;
+}
 
-.desktop{display: block;}
+.desktop {
+    display: block;
+}
 
-.mobile{display: none;}
+.mobile {
+    display: none;
+}
 
-body{
+body {
     background-color: var(--cor-fundo);
 }
 
-header div.desktop{
+header div.desktop {
     background-color: var(--cor-contraste);
     padding: 10px;
     display: flex;
@@ -34,19 +40,21 @@ header div.desktop{
     align-items: center;
 }
 
-main{
+main {
     padding: 15px;
 }
 
-section.formulario{
+section.formulario {
     margin: 0 auto;
-    padding: 15px 10px;
+    padding: 25px 10px;
     border: 2px solid var(--cor-analoga-contraste-1);
     border-radius: 15px;
     position: relative;
+    display: flex;
+    justify-content: space-around;
 }
 
-.titulo{
+.titulo {
     font-size: 20px;
     font-weight: normal;
     padding: 0 10px;
@@ -56,8 +64,8 @@ section.formulario{
     left: 10px;
 }
 
-.formulario input.salario{
-    width: 100%;
+.formulario input[type="number"] {
+    width: 80%;
     height: 35px;
     padding: 5px 10px;
     color: rgb(15, 15, 15);
@@ -67,7 +75,9 @@ section.formulario{
     border: 0;
 }
 
-.formulario input.entrada{
+
+
+.formulario input[type=submit] {
     float: right;
     width: 150px;
     height: 30px;
@@ -77,7 +87,7 @@ section.formulario{
     box-shadow: 5px 5px 20px #0000007A;
 }
 
-section.tabela-valores{
+section.tabela-valores {
     margin-top: 30px;
     padding-top: 15px;
     border-radius: 15px;
@@ -85,21 +95,22 @@ section.tabela-valores{
     position: relative;
 }
 
-section.tabela-valores ul{
+section.tabela-valores ul {
     list-style-type: none;
 }
 
-ul h2{
+ul h2 {
     padding: 10px 10px 0 10px;
     display: flex;
     justify-content: space-between;
 }
 
-ul h2 span, li span{
+ul h2 span,
+li span {
     color: var(--cor-saldo-positivo);
 }
 
-ul li{
+ul li {
     margin-top: 1px;
     border-bottom: 1px solid var(--cor-analoga-contraste-1);
     border-radius: 10px;

@@ -21,7 +21,8 @@
                 <img src="images/icons8-menu-arredondado-50.png" alt="menu-hamburguer">
             </div>
             <!-- /.menu -->
-        </div><!--header-desktop-->
+        </div>
+        <!--header-desktop-->
 
         <div class="mobile">
             <div class="logo">
@@ -33,23 +34,31 @@
                 <img src="images/icons8-menu-arredondado-50.png" alt="menu-hamburguer">
             </div>
             <!-- /.menu -->
-        </div><!--header-mobile-->
+        </div>
+        <!--header-mobile-->
     </header>
 
     <main>
         <div class="desktop">
             <section class="formulario">
-                <h2 class="titulo">Entradas:</h2>
+                <h2 class="titulo">Movimentações:</h2>
                 <!-- /.titulo -->
-                <input type="number" name="salario" id="salario" class="salario" placeholder="Salário:">
-                <input type="submit" value="Cadastrar" onclick="calculoFinanceiro()" class="entrada">
-                <div class="clear"></div>
+                <div class="entradas">
+                    <input type="number" name="entrada" id="entrada" class="entrada" placeholder="Entradas:">
+                    <input type="submit" value="Cadastrar" onclick="calculoFinanceiro()" class="entrada">
+                </div>
+
+                <div class="saidas">
+                    <input type="number" name="saida" id="saida" class="saida" placeholder="Saídas:">
+                    <input type="submit" value="Cadastrar" onclick="calculoFinanceiro()" class="entrada">
+                </div>
             </section>
             <!-- /.formulario -->
+
             <section class="tabela-valores">
                 <h1 class="titulo">Tabela de Planejamento:</h1>
                 <!-- /.titulo -->
-                <ul >
+                <ul>
                     <h2>Dizimo:<span id="valorDiz">R$ 0,00</span></h2>
                     <li>Despesas:<span id="valorDes">R$ 0,00</span></li>
                     <li>Investimentos:<span id="valorInv">R$ 0,00</span></li>
@@ -61,7 +70,7 @@
             <!-- /.tabela-valores -->
         </div>
         <!-- /.desktop -->
-        
+
         <div class="mobile">
             <section class="formulario">
                 <h2 class="titulo">Entradas:</h2>
