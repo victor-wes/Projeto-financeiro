@@ -1,11 +1,12 @@
 :root {
     --cor-fundo: #2E3640;
-    --cor-contraste: #0433BF;
-    --cor-analoga-contraste-1: #0442BF;
-    --cor-analoga-contraste-2: #0455BF;
+    --cor-contraste: #506ab9;
+    --cor-analoga-contraste-1: #9ebcf7;
+    --cor-analoga-contraste-2: #293ca7;
     --cor: #C5CED9;
     --cor-fonte: #ffffff;
-    --cor-saldo-positivo: rgb(72, 253, 72);
+    --cor-saldo-positivo: #03b103;
+    --cor-saldo-negativo: rgb(216, 6, 6)
 }
 
 * {
@@ -44,16 +45,6 @@ main {
     padding: 15px;
 }
 
-section.formulario {
-    margin: 0 auto;
-    padding: 25px 10px;
-    border: 2px solid var(--cor-analoga-contraste-1);
-    border-radius: 15px;
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-}
-
 .titulo {
     font-size: 20px;
     font-weight: normal;
@@ -64,20 +55,41 @@ section.formulario {
     left: 10px;
 }
 
+section.formulario {
+    margin: 0 auto;
+    padding: 25px 10px;
+    border: 2px solid var(--cor-analoga-contraste-1);
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.descricao{
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .formulario input[type="number"] {
     width: 80%;
     height: 35px;
     padding: 5px 10px;
-    color: rgb(15, 15, 15);
-    font-size: 16px;
+    font-size: 13px;
     margin-bottom: 10px;
     border-radius: 3px;
     border: 0;
 }
 
+input.entrada{
+    color: var(--cor-saldo-positivo);
+}
 
+input.saida{
+    color: var(--cor-saldo-negativo);
+}
 
-.formulario input[type=submit] {
+.formulario input[type=submit].cadastrar {
     float: right;
     width: 150px;
     height: 30px;

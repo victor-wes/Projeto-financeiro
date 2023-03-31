@@ -8,13 +8,14 @@ var separacaoGastos = {
 };
 
 function calculoFinanceiro() {
-    let salarioBase = document.querySelector('#salario').value
+    let valorEntrada = document.querySelector('#entrada').value
+    let valorSaida = document.querySelector('#saida').value
 
-    let dizimo = (10 * salarioBase) / 100;
+    let dizimo = (10 * valorEntrada) / 100;
 
 
     function salario() {
-        return salarioBase - dizimo;
+        return valorEntrada - dizimo;
     };
 
     function calculo(base) {
